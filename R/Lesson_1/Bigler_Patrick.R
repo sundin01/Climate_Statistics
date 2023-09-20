@@ -1,13 +1,12 @@
 ###############################################################################
 # Exercise 1
 
-# You can solve the exercise like that. R interpret a vector as an 1-dimensional
-# object (here as a column-vector (array) --> see exercise 2).
-# It contains components of the same type.
+# R interpret a vector as an 1-dimensional object (here: column-vector (array)
+# A vector is a sequence which contains only components of the same type.
 a <- c(2:4)
 b <- c(-1, 3, 0)
 
-# If you define a matrix you can solve the exercise as well. But R will create
+# If we define a matrix we can solve the exercise as well. But R will create
 # a 2-dimensional object (is is also an array).
 # We create a 1 x 3 matrix (which is basically a row-vector):
 a.row <- matrix(c(2:4), nrow = 1, ncol = 3)
@@ -22,7 +21,7 @@ b.column <- matrix(c(-1, 3, 0), nrow = 3, ncol = 1)
 # If we transpose a vector, the result will always be a matrix. Therefor, if
 # we transpose a transposed vector, we will always receive a matrix as well.
 
-# We transpose a vector --> and receive a 1x3 matrix
+# We transpose a vector (sequence) --> and receive a 1x3 matrix
 a.trans <- t(a)
 b.trans <- t(b)
 
@@ -30,14 +29,13 @@ b.trans <- t(b)
 a.double.trans <- t(t(a))
 b.double.trans <- t(t(b))
 
-# We can see that there are the same now
+# Here we can see that there are the same
 a.double.trans == a.column
 b.double.trans == b.column
 
 ###############################################################################
 # Exercise 3
-# we can sum two vectors very easy. It is also proof, that r interpret a and b
-# as column vectors.
+# we can sum two vectors very easy. R sums the vectors component-wise
 c <- a + b
 
 # We also can multiply two vectors (Hadamard product). Careful, it is neither the
