@@ -1,7 +1,7 @@
 ###############################################################################
 # Exercise 1
 
-# R interpret a vector as an 1-dimensional object (here: column-vector (array)
+# R interpret a vector as an 1-dimensional object (here: it is an array
 # A vector is a sequence which contains only components of the same type.
 a <- c(2:4)
 b <- c(-1, 3, 0)
